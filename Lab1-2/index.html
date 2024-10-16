@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>Лабораторная работа 1</title>
-    </head>
-    <body> 
-        <h1>Это моя первая HTML страница! <del>(но это не точно)</del></s></h1>
-        <h1>О себе</h1>
-        <p>Родился в <i>некотором</i> <b>городе</b>,<br> учился в <i>некоторой</i> <b>школе</b>, увлекаюсь спортом, <del>интересных фактов не придумал</del></p>
-        <h2>Какие фильмы мне нравятся <del>фильмы не смотрю, поэтому так</del></h2>
-        <p><ul>
-            <li>Какой-то фильм 1</li>
-            <li>Какой-то фильм 2</li>
-            <li>Какой-то фильм 3</li>
-        </ul></p>
-        <p><h2>Какая музыка мне нравится</h2>
-        <ol>
-            <li>Trivium</li>
-            <li>Architects</li>
-            <li>Celldweller</li>
-        </ol></p>
-        <p><h2>Как связаться со мной</h2>
-        <a href="https://t.me/whyctor">Telegram</a>
-        <p>
-        <img
-        src="images/kot.jpg"
-        /></p>
-        </p>
-    </body>
+
+<head>
+    <title>Лабораторная работа 1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-left">
+            <h1>Это моя первая HTML страница!</h1>
+            <div class="info">
+                <h2>О себе</h2>
+                <p>Родился в <i>некотором</i> <b>городе</b>,<br> учился в <i>некоторой</i> <b>школе</b>, увлекаюсь
+                    спортом,
+                    <del>интересных фактов не придумал</del>
+                </p>
+            </div>
+            <div class="info">
+                <h2>Какие фильмы мне нравятся </h2>
+
+                <ul>
+                    <li>Какой-то фильм 1</li>
+                    <li>Какой-то фильм 2</li>
+                    <li>Какой-то фильм 3</li>
+                </ul>
+            </div>
+            <div class="info">
+                <h2>Какая музыка мне нравится</h2>
+                <ol>
+                    <li>Trivium</li>
+                    <li>Architects</li>
+                    <li>Celldweller</li>
+                </ol>
+            </div>
+            <div class="info">
+                <h2>Как связаться со мной</h2>
+                <p><a href="https://t.me/whyctor">Telegram</a></p>
+            </div>
+        </div>
+        <div class="content-right">
+            <img src="images/kot.jpg" class="imge" />
+        </div>
+    </div>
+</body>
+
 </html>
