@@ -10,7 +10,6 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto
-
 }
 
 h2 {
@@ -50,6 +49,16 @@ a {
     color: beige;
 }
 
+.header {
+    display: flex;
+    justify-content: right;
+}
+
+.links {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .content-left,
 .content-right {
     display: flex;
@@ -66,7 +75,6 @@ a {
 
 .content-right {
     width: 37%;
-
 }
 
 .content {
@@ -79,4 +87,99 @@ a {
     width: 100%;
     height: auto;
     align-self: start;
+}
+
+.container,
+.container-2,
+.container-3 {
+    border-radius: 5px;
+    background-color: darkcyan;
+}
+
+.block,
+.block-2,
+.block-3 {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    background-color: beige;
+}
+
+.container {
+    height: 500px;
+}
+
+.block {
+    margin: auto;
+}
+
+.container-2 {
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+
+.block-2 {
+    margin: auto;
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 500;
+}
+
+.block-3 {
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+}
+
+.imge2 {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+.container-4 {
+    position: relative;
+    border: 2px solid black;
+    width: 800px;
+    height: 800px;
+}
+
+.square-1 {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+}
+
+.square-2 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border: 2px solid blue;
+    width: 200px;
+    height: 200px;
+}
+
+.square-3 {
+    position: absolute;
+    top: 450px;
+    left: 450px;
+    border: 2px solid green;
+    width: 200px;
+    height: 200px;
+}
+
+.foto{
+    position:fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 0px;
+    right: 0px;
 }
