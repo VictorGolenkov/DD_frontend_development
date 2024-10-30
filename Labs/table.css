@@ -1,0 +1,30 @@
+table {
+    border: 2px solid azure;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid azure;
+    padding: 5px;
+}
+
+th {
+    background-color: darkcyan;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: rgba(0, 139, 139, 0.4);
+}
+
+td:hover {
+    background-color: rgba(0, 139, 139, 0.6);
+}
+caption{
+    padding: 3px;
+}
