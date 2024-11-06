@@ -28,3 +28,38 @@ td:hover {
 caption{
     padding: 3px;
 }
+
+.form-container {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.form-group {
+    margin-bottom: 10px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input, select {
+    width: 100%; 
+    padding: 8px; 
+    background-color: darkcyan;
+    box-sizing: border-box; 
+    border: 2px solid azure;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px; 
+    background-color: darkcyan;  
+    border: 2px solid azure; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: rgb(0, 175, 175); 
+}
