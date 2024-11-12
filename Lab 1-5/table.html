@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Лабораторная работа 4</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="table.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="links"> Основная страница</a>
+        <a href="page2.html" class="links"> Позиционирование элементов</a>
+        <a href="table.html" class="links"> Таблица</a>
+    </div>
+    <table id="studentTable">
+        <caption>Таблица со студентами</caption>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>ФИО студента</th>
+                <th>Номер зачётной книжки</th>
+                <th>Номер группы</th>
+                <th>Пол</th>
+                <th>Возраст</th>
+                <th>Форма поступления</th>
+                <th>Название направления</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Иванов Иван Иванович</td>
+                <td>123456</td>
+                <td>101</td>
+                <td>М</td>
+                <td>20</td>
+                <td>Очная</td>
+                <td>Программная инженерия</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Петрова Анна Сергеевна</td>
+                <td>123457</td>
+                <td>102</td>
+                <td>Ж</td>
+                <td>19</td>
+                <td>Очная</td>
+                <td>Экономика</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Смирнов Алексей Викторович</td>
+                <td>123458</td>
+                <td>101</td>
+                <td>М</td>
+                <td>21</td>
+                <td>Заочная</td>
+                <td>Информатика</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Васильева Мария Павловна</td>
+                <td>123459</td>
+                <td>103</td>
+                <td>Ж</td>
+                <td>22</td>
+                <td>Очная</td>
+                <td>Психология</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Николаев Сергей Дмитриевич</td>
+                <td>123460</td>
+                <td>104</td>
+                <td>М</td>
+                <td>20</td>
+                <td>Очная</td>
+                <td>Юриспруденция</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Кузнецова Ольга Игоревна</td>
+                <td>123461</td>
+                <td>102</td>
+                <td>Ж</td>
+                <td>19</td>
+                <td>Заочная</td>
+                <td>Социология</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Федоров Алексей Николаевич</td>
+                <td>123462</td>
+                <td>105</td>
+                <td>М</td>
+                <td>23</td>
+                <td>Заочная</td>
+                <td>Спортивная медицина</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Соколова Екатерина Андреевна</td>
+                <td>123463</td>
+                <td>103</td>
+                <td>Ж</td>
+                <td>21</td>
+                <td>Очная</td>
+                <td>Искусственный интеллект</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Лебедев Дмитрий Александрович</td>
+                <td>123464</td>
+                <td>104</td>
+                <td>М</td>
+                <td>20</td>
+                <td>Заочная</td>
+                <td>Лингвистика</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="form-container">
+        <form id="addRecordForm">
+            <div class="form-group">
+                <label for="fullName">ФИО студента:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="recordNumber">Номер зачетной книжки:</label>
+                <input type="text" id="recordNumber" name="recordNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="groupNumber">Номер группы:</label>
+                <input type="text" id="groupNumber" name="groupNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Выберите</option>
+                    <option value="М">Мужской</option>
+                    <option value="Ж">Женский</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Возраст:</label>
+                <input type="number" id="age" name="age" min="17" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="admissionMode">Форма поступления:</label>
+                <select id="admissionMode" name="admissionMode" required>
+                    <option value="">Выберите</option>
+                    <option value="Очная">Очная</option>
+                    <option value="Заочная">Заочная</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="programName">Название направления:</label>
+                <input list="programs" id="programName" name="programName" required>
+                <datalist id="programs">
+                    <option value="Программная инженерия"></option>
+                    <option value="Экономика"></option>
+                    <option value="Информатика"></option>
+                    <option value="Психология"></option>
+                    <option value="Юриспруденция"></option>
+                    <option value="Социология"></option>
+                    <option value="Спортивная медицина"></option>
+                    <option value="Искусственный интеллект"></option>
+                    <option value="Лингвистика"></option>
+                </datalist>
+            </div>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <script>
+
+        document.getElementById("addRecordForm").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            // Вычисляем новый ID
+            const lastRow = document.querySelector("#studentTable tbody tr:last-child");
+            let newId = 1; 
+            if (lastRow) {
+                const lastIdCell = lastRow.cells[0]; 
+                newId = parseInt(lastIdCell.textContent) + 1; 
+            }
+
+            const fullName = document.getElementById("fullName").value;
+            const recordNumber = document.getElementById("recordNumber").value;
+            const groupNumber = document.getElementById("groupNumber").value;
+            const gender = document.getElementById("gender").value;
+            const age = document.getElementById("age").value;
+            const admissionMode = document.getElementById("admissionMode").value;
+            const programName = document.getElementById("programName").value;
+
+            // Создаем новую строку таблицы
+            const newRow = document.createElement("tr");
+            newRow.innerHTML = `
+            <td>${newId}</td>
+            <td>${fullName}</td>
+            <td>${recordNumber}</td>
+            <td>${groupNumber}</td>
+            <td>${gender}</td>
+            <td>${age}</td>
+            <td>${admissionMode}</td>
+            <td>${programName}</td>
+        `;
+
+            // Добавляем новую строку в тело таблицы
+            document.querySelector("#studentTable tbody").appendChild(newRow);
+
+            // Сбрасываем поля формы
+            document.getElementById("addRecordForm").reset();
+
+
+            alert("Данные добавлены!");
+
+        });
+    </script>
+
+</body>
+
+</html>

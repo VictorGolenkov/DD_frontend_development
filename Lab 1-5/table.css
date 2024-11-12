@@ -1,0 +1,65 @@
+table {
+    border: 2px solid azure;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid azure;
+    padding: 5px;
+}
+
+th {
+    background-color: darkcyan;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: rgba(0, 139, 139, 0.4);
+}
+
+td:hover {
+    background-color: rgba(0, 139, 139, 0.6);
+}
+caption{
+    padding: 3px;
+}
+
+.form-container {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.form-group {
+    margin-bottom: 10px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input, select {
+    width: 100%; 
+    padding: 8px; 
+    background-color: darkcyan;
+    box-sizing: border-box; 
+    border: 2px solid azure;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px; 
+    background-color: darkcyan;  
+    border: 2px solid azure; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: rgb(0, 175, 175); 
+}
