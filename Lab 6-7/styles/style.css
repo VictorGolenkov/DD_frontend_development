@@ -1,4 +1,4 @@
-.navbar {
+.up-nav {
     background: linear-gradient(45deg, #909090, #000000);
 }
 
@@ -22,17 +22,32 @@ body {
     background-position: center center;
     background-attachment: fixed;
     position: relative;
+    height: 100%;
 }
 
 .biography {
     margin-top: 40px;
-    display: flex;
 }
 
 .txt {
     padding: 10px;
 }
 
-.filmslash{
+/* .filmslash{
     border-bottom: solid 2px white;
+} */
+
+.left{
+    display: flex;
+    align-content: start;
+    height: 100%;
+    width: 15%;
+    overflow-y: auto;
+    background-color: #909090;
+}
+
+.c1{
+    height: 100%;
+    width: 85%;
+    margin-left: 15%;
 }

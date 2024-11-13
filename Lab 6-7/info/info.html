@@ -13,8 +13,12 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
-    <nav class="navbar sticky-top">
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="-500" tabindex="0" >
+
+
+    <nav class="navbar sticky-top up-nav">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -27,20 +31,26 @@
                     <li class="nav-item filmslash">
                         <a class="nav-link" href="../films/films.html">Фильмы</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="#demo">Карусель</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#section2">Карточки</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#section3">Биография</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <nav class="left navbar" style="position: fixed">
+        <div class="container-fluid">
+            <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#demo">Карусель</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Карточки с фильмами</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Информация об актёре</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="c1">
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
         <!-- Indicators/dots -->
@@ -171,7 +181,7 @@
         </div>
     </div>
 
-    
+</div>
 </body>
 
 </html>
