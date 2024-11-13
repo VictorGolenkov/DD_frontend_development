@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Лабораторная работа 6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="..\styles\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
+    <nav class="navbar sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-center collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Информация</a>
+                    </li>
+                    <li class="nav-item filmslash">
+                        <a class="nav-link" href="../films/films.html">Фильмы</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#demo">Карусель</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#section2">Карточки</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#section3">Биография</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../pictures/kr1.jpg" alt="Keany Reeaves" class="d-block" style="width: 100%">
+            </div>
+            <div class="carousel-item">
+                <img src="../pictures/kr2.jpg" alt="Young Keany Reeaves" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="../pictures/kr3.jpg" alt="Keany Reeaves Cyberpunk" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container-fluid mt-3  cards" id="section2">
+        <div class="card bg-secondary text-white" style="width: 30%;">
+            <img class="card-img-top" src="../pictures/matrix.jpg" alt="Card image" style="width: 100%;" />
+            <div class="card-body">
+                <h3 class="card-title">Матрица</h3>
+                <p>Жизнь Томаса Андерсона разделена на две части:
+                    днём он — самый обычный офисный работник, получающий нагоняи от начальства,
+                    а ночью превращается в хакера по имени Нео,
+                    и нет места в сети, куда он бы не смог проникнуть.
+                    Но однажды всё меняется.
+                    Томас узнаёт ужасающую правду о реальности.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.kinopoisk.ru/film/7836/" class="btn btn-dark">Смотреть!</a>
+            </div>
+        </div>
+        <div class="card bg-secondary text-white" style="width: 30%;">
+            <img class="card-img-top" src="../pictures/film2.jpg" alt="Card image" style="width: 100%;" />
+            <div class="card-body">
+                <h3 class="card-title">Адвокат дьявола</h3>
+                <p>В Нью-Йорк по приглашению главы крупного юридического концерна прибывает Кевин Ломакс,
+                    молодой адвокат. До этого он был известен тем,
+                    что защищал исключительно негодяев и притом не проиграл ни одного процесса.
+                    На новом месте работы он вполне счастлив,
+                    он живет в роскошной квартире с любящей женой, его окружают интересные люди.</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://www.kinopoisk.ru/film/3797/" class="btn btn-dark">Смотреть!</a>
+            </div>
+        </div>
+        <div class="card bg-secondary text-white" style="width: 30%;">
+            <img class="card-img-top" src="../pictures/film3.jpg" alt="Card image" style="width: 100%;" />
+            <div class="card-body">
+                <h3 class="card-title">Константин: Повелитель тьмы</h3>
+                <p>Джону Константину удалось не только побывать в аду, но и вернуться обратно.
+                    Родившись с неугодным самому себе талантом — способностью распознавать помесь ангелов и демонов,
+                    которые бродят по земле в облике людей, —
+                    Константин под давлением обстоятельств пытается совершить самоубийство,
+                    лишь бы избавиться от мучительных видений. Но неудачно.
+                    Воскрешенный против собственной воли он снова оказывается в мире живых.
+                    Теперь, отмеченный печатью суицида и получивший временное право на жизнь,
+                    он патрулирует границу, разделяющую рай и ад,
+                    тщетно надеясь на обретение спасения путем сражения с земными ставленниками зла.</p>
+            </div>
+            <div class="card-footer"><a href="https://www.kinopoisk.ru/name/7836/" class="btn btn-dark">Смотреть!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3 biography" id="section3">
+        <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#demo">Биография
+            актёра</button>
+        <div id="demo" class="collapse bg-secondary text-white rounded txt">
+            Киану Ривз<br>
+
+            Канадский актёр, продюсер, музыкант (бас-гитарист).<br>
+
+            Полное имя — Киану Чарльз.<br>
+            Родился 2 сентября 1964 года в Бейруте, Ливан.<br>
+
+            Отец актера — наполовину китаец, наполовину гаваец из состоятельной семьи, геолог по профессии, познакомился
+            со своей будущей женой Патрисией, английской актрисой варьете, когда проводил отпуск в Ливане, чем и
+            объясняется столь экзотическое место рождения Киану Ривза. Имя Киану означает на языке племени, проживающего
+            на Гавайских островах, "прохладный горный ветер". Отец оставил семью, когда мальчику было шесть лет, и с тех
+            пор почти не виделся с сыном.<br>
+
+            После развода Патрисия с детьми через Австралию и Нью-Йорк добралась до Канады. Киану Ривз до сих пор
+            сохраняет канадское гражданство. В начальную школу и четыре средних класса, включая школу исполнительского
+            искусства, Киану Ривз ходил в Торонто. Его всегда больше интересовал театр или хоккей, нежели собственно
+            учеба, и в 17 лет его исключили за плохое поведение и неуспеваемость.<br>
+
+            Расставшись со школой, некоторое время подрабатывал разными способами (заточкой коньков, подрезкой
+            деревьев), и в 1984 году наконец дебютировал на сцене в спектакле «Мальчике-волчонке», который стала в
+            Торонто популярным. Последовало несколько крупных работ на телевидении. На него обратили внимание, и с 1986
+            года актер начинает сниматься в кино, причем получает сразу несколько ролей, одна из которых — в драме о
+            хоккеистах «Молодая кровь».<br>
+
+            Ривза идолом молодежи сделал фильм «Невероятные приключения Билла и Теда», где ему удалось точно
+            воспроизвести подростковую ментальность паренька, готового пуститься в путешествие во времени лишь бы сдать
+            экзамен по истории. Созданный им образ очередного пустоголового подростка оказался столь удачным, что Киану
+            Ривза начали отождествлять именно с таким типажом.<br>
+
+            В 1988 год играет молодого энергичного учителя музыки Даней в «Опасных связях». Картина Гаса Ван Сента «Мой
+            собственный штат Айдахо» (1991) современная фантазия на шекспировские темы, стала актёрским триумфом Ривза.
+            Киану Ривз и Ривер Феникс превратили картину в культовый фильм, пользовавшийся неожиданно большим кассовым
+            успехом.<br>
+
+            По-настоящему популярность к актеру пришла в 1994 году после фильма «Скорость». Изобретательный, отважный
+            мускулистый Джек Трэвен сразу очаровал зрителей. Киану Ривз повзрослел и превратился из кумира тинэйджеров в
+            настоящую «звезду» фильмов действия. Посыпались новые предложения, суммы некоторых потенциальных контрактов
+            составляли семь миллионов долларов. Но погоня за деньгами никогда не была определяющим фактором для Киану,
+            и, руководствуясь художественным вкусом и всё тем же нежеланием повторяться, актёр отказался сниматься в
+            «Скорости II».<br>
+
+            Известен как музыкант группы «Dogstar», где играет на бас-гитаре. Группа выпустила несколько компакт-дисков
+            и постоянно дает концерты не только на территории США и Канады, но и по всему миру.<br>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.navbar {
+    background: linear-gradient(45deg, #909090, #000000);
+}
+
+.cards {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+body {
+    background-image: url('../pictures/night-city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.biography {
+    margin-top: 40px;
+    display: flex;
+}
+
+.txt {
+    padding: 10px;
+}
+
+.filmslash{
+    border-bottom: solid 2px white;
+}
